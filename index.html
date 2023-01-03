@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"><!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
     <link
       rel="icon"
       type="image/png"
@@ -14,34 +15,39 @@
 
     <title>Frontend Mentor | NFT preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+   
   </head>
   <body>
     <div class="container">
       <div class="card">
-        <div class="card__img"></div>
+        <div class="card__img-box">
+          <img src="./images/image-equilibrium.jpg" alt="" class="card__img">
+          <div class="card__eye-box">
+            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="card__eye-img"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+          </div>
+        </div>
         <div class="card__info">
           <div class="card__title">Equilibrium #3429</div>
           <div class="card__text">
             Our Equilibrium collection promotes balance and calm.
           </div>
           <div class="card__stats">
-            <div class="card__stat">0.041</div>
-            <div class="card__stat-duration">ETH 3 days left</div>
-            <div class="card__devide"></div>
-            <div class="card__profile"></div>
+            <div class="card__stat">
+              <i><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+
+            </i>
+              <div class="card__numbers">0.041ETH </div></div>
+            <div class="card__stat-duration">3 days left</div>
+          </div>
+            <div class="card__divide"></div>
+            <div class="a">
+            <span class="card__profile">
+              <img src="./images/image-avatar.png" alt="" class="card__profile-img">
+            </span>
             <div class="card__creater">
-              <span class="hightlight">Creation of </span> Jules Wyvern
+              Creation of <span class="highlight">Jules Wyvern </span> 
             </div>
+          </div>
           </div>
         </div>
       </div>

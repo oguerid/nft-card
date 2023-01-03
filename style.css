@@ -1,0 +1,141 @@
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: hsl(215, 51%, 70%);
+}
+
+.container {
+  width: 327px;
+  background: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.card__img-box {
+  margin-bottom: 1rem;
+  
+  
+
+  position: relative;
+}
+.card__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+ 
+  
+ 
+}
+.card__eye-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 0.50);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 15px;
+}
+.card__eye-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__eye-box:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.card__title {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.card__text {
+  max-width: 270px;
+}
+.card__stat {
+  color: #00fff8;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+.card__numbers {
+  padding-bottom: 0.4rem;
+  margin-left: 0.5rem;
+}
+.card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__divide {
+  background-color: hsl(215, 51%, 70%);
+  height: 0.01rem;
+  margin: 1rem 0rem;
+}
+.a {
+  display: flex;
+}
+.card__profile {
+  display: inline-block;
+}
+.card__profile-img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 500%;
+}
+.card__creater {
+  margin-left: 5px;
+}
+.highlight {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 350px;
+  }
+  .card__text {
+    max-width: none;
+  }
+
+  .card__title:hover,
+  .card__stat:hover,
+  .highlight:hover {
+    color: #00fff8;
+    cursor: pointer;
+  }
+
+  /* .card__img-box::after:hover {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00fff8;
+    position: absolute;
+  }
+  .card__eye:hover {
+    position: absolute;
+  } */
+}
