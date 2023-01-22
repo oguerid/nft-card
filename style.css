@@ -29,9 +29,6 @@ body {
 }
 .card__img-box {
   margin-bottom: 1rem;
-  
-  
-
   position: relative;
 }
 .card__img {
@@ -60,10 +57,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card__eye-box:hover {
-  opacity: 1;
-  cursor: pointer;
-}
+
 .card__title {
   color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
@@ -94,9 +88,9 @@ body {
 .a {
   display: flex;
 }
-.card__profile {
+/* .card__profile {
   display: inline-block;
-}
+} */
 .card__profile-img {
   height: 30px;
   width: 30px;
@@ -125,7 +119,10 @@ body {
     color: #00fff8;
     cursor: pointer;
   }
-
+  .card__eye-box:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
   /* .card__img-box::after:hover {
     content: "";
     width: 100%;
